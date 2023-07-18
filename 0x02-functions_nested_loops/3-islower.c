@@ -6,5 +6,5 @@
 int putchar (char c);
 void print alphabet(void);
 void print alphabet x10 (void);
-
+int _islower(int c);
 #endif
