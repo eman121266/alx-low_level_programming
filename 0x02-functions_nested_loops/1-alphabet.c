@@ -5,13 +5,13 @@
  *		the alphabet a - z
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	int ch;
+	char i;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(ch);
+		_putchar(i);
 	}
-	_putchar('\n');
+	_putchar(10);
 }
