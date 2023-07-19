@@ -1,10 +1,16 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-#include <stdio.h>
+/**
+ * _is lower - function to check if character is lowercase
+ *
+ * @c: checks input of function
+ *
+ * Return: returns 1 if 'c' is lowercase otherwise always 0 (Success)
+*/
 
-int putchar (char c);
-void print alphabet(void);
-void print alphabet x10 (void);
-int _islower(int c);
-#endif
+int _is lower(int c)
+{
+	if (c >= 97 && c <= 122)
+		return (1);
+	return (0);
+}
