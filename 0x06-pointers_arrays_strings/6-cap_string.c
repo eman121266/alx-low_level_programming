@@ -1,28 +1,39 @@
 #include "main.h"
 
 /**
- * cap_string - all words og string
- * @s: input
- * Return: string
-*/
-
-char *cap_string(char *s)
+ * cap_string - main function.
+ * @str : string
+ *
+ * Description: make the letters smaller!
+ *
+ * Return: string with small letters.
+ */
+char *cap_string(char *str)
 {
-	char *ptr = s;
-	int f = 1;
+	int i = 0;
 
-	while (*s)
+	if (str[0] >= 'a' && str[0] <= 'z')
 	{
-		if (isdelimiter(*s))
-			f = 1;
-		else if (islower(*s) && f)
-		{
-			*s -= 32;
-			f = 0;
-		}
-		else
-			f = 0;
-		s++;
+		str[0] -= 32;
 	}
-	return (ptr);
+
+	while (str[i] != '\0')
+	{
+		if (str[i] == ' ' || str[i] == '\t' ||
+				str[i] == '\n' || str[i] == ',' ||
+				str[i] == ';' || str[i] == '.' ||
+				str[i] == '!' || str[i] == '?' ||
+				str[i] == '\"' || str[i] == '(' ||
+				str[i] == ')' || str[i] == '{' ||
+				str[i] == '}')
+		{
+			i++;
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] -= 32;
+			}
+		}
+		i++;
+	}
+	return (str);
 }
