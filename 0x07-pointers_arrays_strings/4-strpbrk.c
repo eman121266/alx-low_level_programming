@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - length
+ * _strpbrk - search
  * @s: string
  * @accept: bytes
  * Return: int
@@ -26,7 +26,7 @@ char *_strpbrk(char *s, char *accept)
 			j++;
 
 		}
-		i++
+		i++;
 
 	}
 	return (0);
