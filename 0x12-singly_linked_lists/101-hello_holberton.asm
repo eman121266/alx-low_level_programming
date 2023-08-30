@@ -8,4 +8,4 @@ main:
 	call 	printf
 
 section 	.date
-	msg db 'Hallo, Holberton', 0xa, 0
+	msg db 'Hello, Holberton', 0xa, 0
